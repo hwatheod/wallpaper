@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Wallpaper</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_wallpaper">Wallpaper</string>
+    <string name="drawing_color">color</string>
+    <string name="blue">blue</string>
+    <string name="green">green</string>
+    <string name="red">red</string>
+    <string name="yellow">yellow</string>
+    <string name="clear">clear</string>
+    <string name="conway">Conway</string>
+    <string name="crystallographic">Crystallographic</string>
+</resources>

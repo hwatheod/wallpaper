@@ -1,0 +1,60 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="hwatheod.wallpaper.WallpaperActivity">
+
+    <item android:id="@+id/action_change_color"
+        android:title="@string/drawing_color"
+        android:icon="@drawable/drawing_color"
+        app:showAsAction="ifRoom">
+        <menu>
+            <group android:id="@+id/group_change_color" android:checkableBehavior="single">
+            <item android:id="@+id/color_blue" android:title="@string/blue" />
+            <item android:id="@+id/color_red" android:title="@string/red" />
+            <item android:id="@+id/color_green" android:title="@string/green" />
+            <item android:id="@+id/color_yellow" android:title="@string/yellow" />
+            <item android:id="@+id/color_clear" android:title="@string/clear" />
+            </group>
+        </menu>
+    </item>
+
+    <!-- The titles of the individual groups are defined in the SymmetryGroup class.
+         They vary depending on whether the user chooses Conway or Crystallographic names.
+    -->
+    <item android:id="@+id/action_change_group"
+        android:title=""
+        app:showAsAction="ifRoom">
+        <menu>
+           <group android:id="@+id/group_change_group" android:checkableBehavior="single">
+           <item android:id="@+id/group_o" android:title=""/>
+           <item android:id="@+id/group_2222" android:title="" />
+           <item android:id="@+id/group_333" android:title="" />
+           <item android:id="@+id/group_442" android:title="" />
+           <item android:id="@+id/group_632" android:title="" />
+           <item android:id="@+id/group_s2222" android:title="" />
+           <item android:id="@+id/group_s333" android:title="" />
+           <item android:id="@+id/group_s442" android:title="" />
+           <item android:id="@+id/group_s632" android:title="" />
+           <item android:id="@+id/group_ss" android:title="" />
+           <item android:id="@+id/group_sx" android:title="" />
+           <item android:id="@+id/group_xx" android:title="" />
+           <item android:id="@+id/group_22s" android:title="" />
+           <item android:id="@+id/group_22x" android:title="" />
+           <item android:id="@+id/group_2s22" android:title="" />
+           <item android:id="@+id/group_3s3" android:title="" />
+           <item android:id="@+id/group_4s2" android:title="" />
+           </group>
+       </menu>
+     </item>
+
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:icon="@drawable/ic_action_settings"
+        android:orderInCategory="100" app:showAsAction="ifRoom">
+        <menu>
+            <group android:id="@+id/group_symbol_names" android:checkableBehavior="single">
+            <item android:id="@+id/conway" android:title="@string/conway"/>
+            <item android:id="@+id/crystallographic" android:title="@string/crystallographic"/>
+            </group>
+        </menu>
+    </item>
+</menu>
