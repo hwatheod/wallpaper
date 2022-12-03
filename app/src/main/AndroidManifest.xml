@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="hwatheod.wallpaper" >
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-feature
         android:glEsVersion="0x00020000"
@@ -14,7 +13,8 @@
 
         <activity
             android:name=".WallpaperActivity"
-            android:label="@string/title_activity_wallpaper">
+            android:label="@string/title_activity_wallpaper"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -2,7 +2,7 @@ package hwatheod.wallpaper;
 
 import android.graphics.Color;
 import android.graphics.PorterDuff;
-import android.support.v7.app.ActionBarActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -10,7 +10,7 @@ import android.view.MenuItem;
 import java.util.HashMap;
 import java.util.Map;
 
-public class WallpaperActivity extends ActionBarActivity {
+public class WallpaperActivity extends AppCompatActivity {
 
     public static final String TAG = "WallpaperActivity";
     private Menu theMenu;
